@@ -21,6 +21,28 @@ class ViewController: UIViewController {
         // Do any additional setup after loading the view.
     }
 
+    override func loadView() {
+        super.loadView()
+        print("loadView")
+    }
+
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(animated)
+        print("viewDidAppear")
+    }
+
+    override func viewWillDisappear(_ animated: Bool) {
+        super.viewWillDisappear(animated)
+        print("viewWillDisappear")
+    }
+
+    override func viewDidDisappear(_ animated: Bool) {
+        super.viewDidDisappear(animated)
+        print("viewDidDisappear")
+    }
+
+
+
     @IBOutlet var slider: UISlider!
     @IBOutlet var label: UILabel!
 
