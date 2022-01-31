@@ -43,7 +43,7 @@
                             </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
-                        <color key="backgroundColor" red="0.4799784525623953" green="0.91976243257522583" blue="0.71153566284241443" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <color key="backgroundColor" systemColor="systemYellowColor"/>
                         <constraints>
                             <constraint firstItem="2p0-h1-f21" firstAttribute="top" secondItem="KHg-LL-JN2" secondAttribute="bottom" constant="30" id="GCF-Vb-e9K"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="FLd-5u-5hY" secondAttribute="trailing" constant="20" id="IsO-mr-z9U"/>
@@ -54,6 +54,7 @@
                             <constraint firstItem="KHg-LL-JN2" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="tAW-VW-Tdq"/>
                         </constraints>
                     </view>
+                    <navigationItem key="navigationItem" id="EkL-4k-zcI"/>
                     <connections>
                         <outlet property="label" destination="2p0-h1-f21" id="ZQg-y6-gKY"/>
                         <outlet property="slider" destination="FLd-5u-5hY" id="Nq8-lN-EG3"/>
@@ -61,7 +62,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="139" y="121"/>
+            <point key="canvasLocation" x="881.91964285714278" y="120.28985507246378"/>
         </scene>
     </scenes>
     <resources>
@@ -75,6 +76,9 @@
         </systemColor>
         <systemColor name="systemPurpleColor">
             <color red="0.68627450980392157" green="0.32156862745098042" blue="0.87058823529411766" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemYellowColor">
+            <color red="1" green="0.80000000000000004" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>

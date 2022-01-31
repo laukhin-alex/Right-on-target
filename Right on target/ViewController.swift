@@ -13,6 +13,13 @@ class ViewController: UIViewController {
     var round: Int = 1
     var points: Int = 0
 
+    override func loadView() {
+        super.loadView()
+        print("loadView")
+    }
+
+
+
     override func viewDidLoad() {
         super.viewDidLoad()
         print("viewDidLoad")
@@ -21,9 +28,9 @@ class ViewController: UIViewController {
         // Do any additional setup after loading the view.
     }
 
-    override func loadView() {
-        super.loadView()
-        print("loadView")
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        print("viewWillAppear")
     }
 
     override func viewDidAppear(_ animated: Bool) {
@@ -71,6 +78,13 @@ class ViewController: UIViewController {
         }
         self.number = Int.random(in: 1...50)
         self.label.text = String(self.number)
+    }
+
+    lazy var secondViewController: SecondViewController = getSecondViewController()
+    private func getSecondViewController() -> SecondViewController {
+        let storyBoard = UIStoryboard(name: "Main", bundle: nil)
+        let viewController = storyBoard.instantiateViewController(withIdentifier: "SecondViewController")
+        return viewController as! SecondViewController
     }
 }
 
